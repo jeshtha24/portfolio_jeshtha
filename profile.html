@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jeshtha profile</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ff1726c397.js" crossorigin="anonymous"></script>  
+</head>
+<body>
+   <div id="header">
+    <div class="container">
+        <nav>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenue()"></i>  
+            </ul>
+            <i class="fa-solid fa-bars=" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>PROGRAMMER</p>
+            <h1>Hi,I am <span>Jeshtha</span><br>From Pune-India</h1>
+        </div>
+    </div>
+   </div>
+   <!--------- about-------->
+   <div id="about">
+    <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="assest/girl1.png" >
+          </div>
+          <div class="about-col-2">
+              <h1 class="sub-title">About Me</h1>
+              <p>Hello everyone I am jeshtha from pune. 
+                I the languages I know are: java , c++ , python, javascript.
+                The skills I am expert are html , css , javascript.
+                Now currently I am learning react and android devloping.
+                I am curious and ambitious about learning new technical skills and also have huge interest in exploring new technical skills.
+              </p>
+              <div class="tab-title">
+                <p class="tab-links active-link" onclick="opentab('Skills')">Skills </p>
+                <p class="tab-links"onclick="opentab('Explerience')">Explerience </p>
+                <p class="tab-links"onclick="opentab('Education')">Education </p>
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Web Devloping</span><br>website development</li>
+                    <li><span>App Devloping</span><br>App development</li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="Explerience">
+                <ul>
+                    <li><span>Beginner</span><br>beginner but still have hands on all the things</li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="Education">
+                <ul>
+                    <li><span>HSC</span><br>from decent junior college</li>
+                    <li><span>Engineering</span><br>persuing from Dr.Dy Patil Institute Of Technology</li>
+                </ul>
+              </div>
+          </div>  
+        </div>
+    </div> 
+    <!-- --------------services----------  -->
+    <div id="services">
+        <div class="container">
+         <h1 class="sub-title changes">My Services</h1>
+         <br>
+         <div class="services-list">
+            <div>
+               <i class="fa-solid fa-code"></i>
+                <h2>Web Devloping</h2>
+                <p>I am learning webdevloping,
+                    I am still in initial stage but wishing to be pro.
+                    html, css , javascript are the frontend languages I know very well
+                </p>
+                <a href="#">Learn more</a>
+                <p></p>
+            </div>
+            <div>
+                <i class="fa-brands fa-android"></i>
+                <h2>Android Devloping</h2>
+                <p>I am learning android devloping,
+                    I am still in initial stage but wishing to be pro.
+                    html, css , javascript are the frontend languages I know very well
+                </p>
+                <a href="#">Learn more</a>
+                <br>
+            </div>
+         </div> 
+       </div> 
+   </div>
+   <!-- -----------protfolio---------- -->
+   <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"></h1>
+        </div>
+    </div>
+   <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+   </script>
+   <div>
+    <div class="head">
+        <h1>My Skills</h1>
+        <p></p>
+    </div>
+    <div class="zoom">
+        <img src="assest/1.png">
+        <img src="assest/2.png">
+        <img src="assest/3.png">
+        <img src="assest/4.png">
+        <img src="assest/5.png">
+        <img src="assest/6.png">
+    </div>
+   </div>
+  <!-- --------contact------  -->
+  <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>jeshthataktewale@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>9284630612</p>
+                    <p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/profile.php?id=100076185206839"><i class="fab fa-facebook"></i></a>
+                            <a href="https://twitter.com/jeshtha_t"><i class="fab fa-twitter-square"></i></a>
+                            <a href="https://www.instagram.com/just__jeshtha/"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/jeshtha-taktewale-275476228/"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </p>
+                    <div>
+                        <p><a href="assest/cv.pdf" download class="btn btn2"><b>Download CV</b></a></p>
+                   </div>
+                </div>
+               
+                <div class="contact-right">
+                 <form method="post" action="https://script.google.com/macros/s/AKfycbyvzqEZGOP5xzS5JTD5Bz3NM1UeWNZrA9VqAdwTzFaW95chnNKCsQK9bk7_EGFGKBdm8A/exec">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2"><b>Submit</b></button>
+                 </form>
+                 <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Jeshtha <i class="fas fa-heart"></i>profile/CV</p>
+        </div> 
+    </div>
+    <script>
+        var sidemenu= document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        } 
+        function closemenu(){
+            sidemenu.style.right="-200";
+        }
+    </script>
+</body> 
+</html>
